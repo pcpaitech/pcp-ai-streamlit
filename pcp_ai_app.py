@@ -1,8 +1,16 @@
 import streamlit as st
 import math
 import matplotlib.pyplot as plt
+from PIL import Image
 
+# ✅ Must be the first Streamlit command
 st.set_page_config(page_title="PCP-AI Clinical Risk Tool", layout="wide")
+
+# ✅ Logo
+logo = Image.open("logo.png")
+st.image(logo, width=150)
+
+# App title
 st.title("🧬 PCP-AI | Cardio-Renal-Metabolic Risk Calculator")
 
 # Patient Inputs
